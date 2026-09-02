@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-plus-jakarta: var(--font-plus-jakarta);
+}
+
+@layer utilities {
+  .uc-marquee {
+    animation: uc-marquee 32s linear infinite;
+  }
+}
+
+@keyframes uc-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uc-marquee {
+    animation: none;
+  }
+}
+
+body {
+  background-color: #030712;
+  color: white;
+}
