@@ -38,10 +38,6 @@ export default function Contact() {
           </div>
           <dl className="space-y-5">
             <div className="rounded-2xl border border-white/10 bg-[#0f172a]/80 p-5">
-              <dt className="text-xs font-semibold uppercase tracking-widest text-sky-400">Titular</dt>
-              <dd className="mt-2 text-base font-medium text-white">Jeannette Collado Urbina</dd>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-[#0f172a]/80 p-5">
               <dt className="text-xs font-semibold uppercase tracking-widest text-sky-400">Dirección</dt>
               <dd className="mt-2">
                 <a
@@ -55,18 +51,24 @@ export default function Contact() {
               </dd>
             </div>
             <div className="rounded-2xl border border-white/10 bg-[#0f172a]/80 p-5">
-              <dt className="text-xs font-semibold uppercase tracking-widest text-sky-400">Teléfono</dt>
-              <dd className="mt-2">
-                <a href="tel:+51915085261" className="text-base text-slate-200 transition-colors hover:text-sky-400">
-                  +51 915 085 261
+              <dt className="text-xs font-semibold uppercase tracking-widest text-sky-400">Teléfono(s)</dt>
+              <dd className="mt-2 flex flex-col space-y-1">
+                <a href="tel:+51959217636" className="text-base text-slate-200 transition-colors hover:text-sky-400">
+                  +51 959 217 636
+                </a>
+                <a href="tel:+51995042876" className="text-base text-slate-200 transition-colors hover:text-sky-400">
+                  +51 995 042 876
+                </a>
+                <a href="tel:+34642175097" className="text-base text-slate-200 transition-colors hover:text-sky-400">
+                  +34 642 17 50 97
                 </a>
               </dd>
             </div>
             <div className="rounded-2xl border border-white/10 bg-[#0f172a]/80 p-5">
               <dt className="text-xs font-semibold uppercase tracking-widest text-sky-400">Correo</dt>
               <dd className="mt-2">
-                <a href="mailto:colladojeannette@gmail.com" className="break-all text-base text-slate-200 transition-colors hover:text-sky-400">
-                  colladojeannette@gmail.com
+                <a href="mailto:colladojeanfabio@gmail.com" className="break-all text-base text-slate-200 transition-colors hover:text-sky-400">
+                  colladojeanfabio@gmail.com
                 </a>
               </dd>
             </div>
@@ -79,7 +81,7 @@ export default function Contact() {
         <div className="rounded-2xl border border-white/10 bg-[#0f172a]/80 p-6 shadow-2xl sm:p-8 md:p-10">
           <h2 className="text-xl font-semibold tracking-tight text-white">Envíanos un mensaje</h2>
           <p className="mt-2 mb-8 text-sm leading-relaxed text-slate-400">
-            Completa el formulario. Al enviar, se abrirá Gmail con tu mensaje ya redactado hacia colladojeannette@gmail.com, listo para que lo revises y presiones enviar.
+            Completa el formulario. Al enviar, se abrirá Gmail con tu mensaje ya redactado hacia colladojeanfabio@gmail.com, listo para que lo revises y presiones enviar.
           </p>
           <ContactForm />
         </div>

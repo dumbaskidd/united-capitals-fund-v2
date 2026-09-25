@@ -22,13 +22,18 @@ export default function Footer() {
             © {new Date().getFullYear()} United Capitals. Conectando portafolios e inversionistas latinoamericanos con oportunidades globales.
           </p>
           <div className="mt-6 space-y-1.5 text-sm">
-            <p className="text-slate-300 font-medium">Pilar Jeannette Collado Urbina</p>
             <p>Alejo Bezada 131, Lima, 15088, Perú</p>
-            <a href="tel:+51915085261" className="block hover:text-sky-400 transition-colors">
-              +51 915 085 261
+            <a href="tel:+51959217636" className="block hover:text-sky-400 transition-colors">
+              +51 959 217 636
             </a>
-            <a href="mailto:colladojeannette@gmail.com" className="block hover:text-sky-400 transition-colors break-all">
-              colladojeannette@gmail.com
+            <a href="tel:+51995042876" className="block hover:text-sky-400 transition-colors">
+              +51 995 042 876
+            </a>
+            <a href="tel:+34642175097" className="block hover:text-sky-400 transition-colors">
+              +34 642 17 50 97
+            </a>
+            <a href="mailto:colladojeanfabio@gmail.com" className="block hover:text-sky-400 transition-colors break-all">
+              colladojeanfabio@gmail.com
             </a>
           </div>
         </div>

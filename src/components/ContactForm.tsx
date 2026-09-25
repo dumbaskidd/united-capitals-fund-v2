@@ -28,7 +28,7 @@ Mensaje:
 ${mensaje}`;
 
     // Usar la URL de redacción de Gmail explícitamente en lugar de mailto:
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=colladojeannette@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=colladojeanfabio@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(gmailUrl, '_blank');
   };
 
