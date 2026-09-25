@@ -35,7 +35,7 @@ ${mensaje}`;
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label htmlFor="contact-nombre" className="mb-1.5 block text-xs font-semibold tracking-wide text-slate-300">
+        <label htmlFor="contact-nombre" className="mb-1.5 block text-xs font-semibold tracking-wide text-[#38404b]/80">
           Nombre completo
         </label>
         <input
@@ -43,7 +43,7 @@ ${mensaje}`;
           type="text"
           autoComplete="name"
           required
-          className="w-full rounded-lg border border-white/10 bg-[#030712] px-4 py-3 text-sm text-white placeholder:text-slate-500 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40"
+          className="w-full rounded-lg border border-[#38404b]/10 bg-[#f8f9fa] px-4 py-3 text-sm text-[#38404b] placeholder:text-[#38404b]/60 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40"
           placeholder="Tu nombre y apellido"
           name="nombre"
           value={formData.nombre}
@@ -51,7 +51,7 @@ ${mensaje}`;
         />
       </div>
       <div>
-        <label htmlFor="contact-correo" className="mb-1.5 block text-xs font-semibold tracking-wide text-slate-300">
+        <label htmlFor="contact-correo" className="mb-1.5 block text-xs font-semibold tracking-wide text-[#38404b]/80">
           Correo electrónico
         </label>
         <input
@@ -59,7 +59,7 @@ ${mensaje}`;
           type="email"
           autoComplete="email"
           required
-          className="w-full rounded-lg border border-white/10 bg-[#030712] px-4 py-3 text-sm text-white placeholder:text-slate-500 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40"
+          className="w-full rounded-lg border border-[#38404b]/10 bg-[#f8f9fa] px-4 py-3 text-sm text-[#38404b] placeholder:text-[#38404b]/60 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40"
           placeholder="tu@correo.com"
           name="correo"
           value={formData.correo}
@@ -67,14 +67,14 @@ ${mensaje}`;
         />
       </div>
       <div>
-        <label htmlFor="contact-telefono" className="mb-1.5 block text-xs font-semibold tracking-wide text-slate-300">
-          Teléfono <span className="font-normal text-slate-500">(opcional)</span>
+        <label htmlFor="contact-telefono" className="mb-1.5 block text-xs font-semibold tracking-wide text-[#38404b]/80">
+          Teléfono <span className="font-normal text-[#38404b]/60">(opcional)</span>
         </label>
         <input
           id="contact-telefono"
           type="tel"
           autoComplete="tel"
-          className="w-full rounded-lg border border-white/10 bg-[#030712] px-4 py-3 text-sm text-white placeholder:text-slate-500 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40"
+          className="w-full rounded-lg border border-[#38404b]/10 bg-[#f8f9fa] px-4 py-3 text-sm text-[#38404b] placeholder:text-[#38404b]/60 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40"
           placeholder="+51 900 000 000"
           name="telefono"
           value={formData.telefono}
@@ -82,13 +82,13 @@ ${mensaje}`;
         />
       </div>
       <div>
-        <label htmlFor="contact-asunto" className="mb-1.5 block text-xs font-semibold tracking-wide text-slate-300">
-          Asunto <span className="font-normal text-slate-500">(opcional)</span>
+        <label htmlFor="contact-asunto" className="mb-1.5 block text-xs font-semibold tracking-wide text-[#38404b]/80">
+          Asunto <span className="font-normal text-[#38404b]/60">(opcional)</span>
         </label>
         <input
           id="contact-asunto"
           type="text"
-          className="w-full rounded-lg border border-white/10 bg-[#030712] px-4 py-3 text-sm text-white placeholder:text-slate-500 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40"
+          className="w-full rounded-lg border border-[#38404b]/10 bg-[#f8f9fa] px-4 py-3 text-sm text-[#38404b] placeholder:text-[#38404b]/60 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40"
           placeholder="Perfil de inversión, asesoría, alianza…"
           name="asunto"
           value={formData.asunto}
@@ -96,7 +96,7 @@ ${mensaje}`;
         />
       </div>
       <div>
-        <label htmlFor="contact-mensaje" className="mb-1.5 block text-xs font-semibold tracking-wide text-slate-300">
+        <label htmlFor="contact-mensaje" className="mb-1.5 block text-xs font-semibold tracking-wide text-[#38404b]/80">
           Mensaje
         </label>
         <textarea
@@ -104,7 +104,7 @@ ${mensaje}`;
           name="mensaje"
           rows={6}
           required
-          className="w-full rounded-lg border border-white/10 bg-[#030712] px-4 py-3 text-sm text-white placeholder:text-slate-500 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40 resize-y min-h-[140px]"
+          className="w-full rounded-lg border border-[#38404b]/10 bg-[#f8f9fa] px-4 py-3 text-sm text-[#38404b] placeholder:text-[#38404b]/60 transition-colors focus:border-[#38bdf8] focus:outline-none focus:ring-2 focus:ring-[#38bdf8]/40 resize-y min-h-[140px]"
           placeholder="Cuéntanos sobre tu perfil, horizonte y lo que buscas."
           value={formData.mensaje}
           onChange={handleChange}
@@ -112,7 +112,7 @@ ${mensaje}`;
       </div>
       <button
         type="submit"
-        className="inline-flex w-full items-center justify-center rounded-full bg-[#eab308] px-7 py-3.5 text-sm font-semibold text-[#030712] transition-colors hover:bg-[#facc15] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+        className="inline-flex w-full items-center justify-center rounded-full bg-[#72563f] px-7 py-3.5 text-sm font-semibold text-[#030712] transition-colors hover:bg-[#8c6b4e] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
       >
         Enviar mensaje
       </button>

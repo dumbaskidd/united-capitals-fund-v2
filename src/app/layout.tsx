@@ -17,7 +17,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "United Capitals — Equipo especializado en Inversiones Globales",
+  title: "Andes Capital — Equipo especializado en Inversiones Globales",
   description: "Experiencia internacional enfocada en identificar y estructurar oportunidades de inversión para Latinoamérica.",
 };
 
@@ -28,10 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${inter.variable} ${plusJakartaSans.variable}`}>
-      <body className="bg-[#030712] text-white font-sans antialiased min-h-screen flex flex-col">
+      <body className="bg-[#f8f9fa] text-[#38404b] font-sans antialiased min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
-          <div className="bg-[#030712] text-white">{children}</div>
+          <div className="bg-[#f8f9fa] text-[#38404b]">{children}</div>
         </main>
         <Footer />
       </body>

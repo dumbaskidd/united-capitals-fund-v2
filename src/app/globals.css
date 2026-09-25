@@ -13,10 +13,10 @@
 
 @keyframes uc-marquee {
   from {
-    transform: translateX(0);
+    transform: translateX(-33.333%);
   }
   to {
-    transform: translateX(-33.333%);
+    transform: translateX(0);
   }
 }
 
@@ -27,6 +27,6 @@
 }
 
 body {
-  background-color: #030712;
-  color: white;
+  background-color: #f8f9fa;
+  color: #38404b;
 }
