@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -12,7 +13,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/65 backdrop-blur-2xl border-b border-white/20 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-6">
         <Link href="/" className="flex items-center gap-4">
-          <img src="/andes-logo.png" alt="Andes Capital" className="h-[54px] md:h-[65px] w-auto drop-shadow-md" />
+          <Image src="/andes-logo.png" alt="Andes Capital" width={180} height={65} className="h-[54px] md:h-[65px] w-auto drop-shadow-md" />
           <span className="hidden lg:block text-[14px] leading-tight text-[#38404b]/70 border-l border-[#38404b]/10 pl-4 ml-1">
             Conectándote
             <br />
