@@ -1,141 +1,128 @@
 import Image from "next/image";
 import Link from "next/link";
+import FadeUp from "@/components/FadeUp";
+import { StaggerContainer, StaggerItem } from "@/components/StaggerUp";
+import { ArrowRight, ChevronRight, Briefcase, Landmark, ShieldCheck } from "lucide-react";
+import TradingChartBackground from "@/components/TradingChartBackground";
+import InteractiveServiceCards from "@/components/InteractiveServiceCards";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Servicios — Andes Capital",
-  description: "Asset Management para inversionistas institucionales y calificados, y Wealth Services para individuos y familias de alto patrimonio.",
+  description: "TEXT TEXT TEXT",
 };
 
 export default function Services() {
   return (
     <>
-      <section className="relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#72563f]">Servicios</p>
-          <h1 className="mt-4 max-w-3xl text-[2.4rem] font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-            Dos líneas.
-            <br />
-            Un mismo criterio.
-          </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-[#38404b]/70 sm:text-lg">
-            Asset Management para inversionistas institucionales y calificados. Wealth Services para individuos y familias de alto patrimonio. En ambas, el trabajo de nuestro equipo es el mismo: claridad, proceso y acceso a mercados globales.
-          </p>
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Link
-              href="#asset-management"
-              className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#72563f] text-[#030712] hover:bg-[#8c6b4e] w-full sm:w-auto"
-            >
-              Asset Management
-            </Link>
-            <Link
-              href="#wealth-services"
-              className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#38404b] text-white hover:bg-[#38404b]/90 w-full sm:w-auto"
-            >
-              Wealth Services
-            </Link>
+      <section className="relative overflow-hidden pt-40 pb-32 flex items-center min-h-[60vh] bg-[#1c2126]">
+        {/* Animated Trading Chart Background */}
+        <TradingChartBackground />
+        
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1c2126]/40 via-transparent to-[#1c2126]"></div>
+        
+        <div className="mx-auto max-w-7xl px-6 relative z-10 text-center flex flex-col items-center">
+          <FadeUp>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#eab308] border border-[#eab308]/30 bg-[#eab308]/10 px-4 py-1.5 rounded-full inline-block">
+              XXXXX XXXXX
+            </p>
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <h1 className="mt-8 max-w-4xl text-5xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-6xl md:text-7xl">
+              TITLE TITLE<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#eab308] to-[#aa8362]">TITLE TITLE</span>
+            </h1>
+          </FadeUp>
+          <FadeUp delay={0.2}>
+            <p className="mt-8 max-w-2xl text-lg md:text-xl leading-relaxed text-white/80 font-medium">
+              TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.
+            </p>
+          </FadeUp>
+        </div>
+      </section>
+
+      {/* Interactive Service Cards Module */}
+      <section className="relative overflow-hidden py-32 bg-[#2a3038]">
+        <div className="mx-auto max-w-7xl px-6 relative z-10">
+          <FadeUp className="mb-16">
+            <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">TITLE TITLE TITLE</h2>
+            <p className="mt-4 text-xl text-white/60 max-w-2xl">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.</p>
+          </FadeUp>
+          
+          <FadeUp delay={0.2}>
+            <InteractiveServiceCards />
+          </FadeUp>
+        </div>
+      </section>
+
+      {/* Asset Management Module */}
+      <section id="asset-management" className="scroll-mt-36 bg-[#f8f9fa] py-32 relative overflow-hidden">
+        {/* Abstract light decoration */}
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#72563f]/5 rounded-full blur-[120px]"></div>
+        
+        <div className="mx-auto max-w-7xl px-6 relative z-10">
+          <div className="grid items-start gap-20 lg:grid-cols-2">
+            <FadeUp>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#72563f] mb-4">XXXX XXXXXX</p>
+              <h2 className="text-5xl font-bold leading-tight tracking-tight text-[#2a3038]">TITLE TITLE<br/>TITLE TITLE</h2>
+              <p className="mt-8 text-xl leading-relaxed text-[#2a3038]/70">
+                TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.
+              </p>
+              <div className="mt-12 space-y-6">
+                {[1, 2, 3].map((item) => (
+                  <div key={item} className="flex gap-4 group cursor-pointer">
+                    <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#72563f]/10 text-[#72563f] transition-all group-hover:bg-[#72563f] group-hover:text-white">
+                      <ChevronRight className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-bold text-[#2a3038]">XXXX XXXXXX</h4>
+                      <p className="mt-2 text-[#2a3038]/60">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </FadeUp>
+            
+            <FadeUp delay={0.2}>
+              <div className="grid gap-6">
+                <div className="rounded-[2.5rem] border border-white/60 bg-white/40 backdrop-blur-2xl p-10 shadow-2xl transition-all hover:scale-105 hover:bg-white/60">
+                  <Briefcase className="w-10 h-10 text-[#72563f] mb-6" />
+                  <h3 className="text-2xl font-bold text-[#2a3038] mb-4">TITLE TITLE</h3>
+                  <p className="text-[#2a3038]/70 leading-relaxed">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.</p>
+                </div>
+                <div className="rounded-[2.5rem] border border-white/60 bg-white/40 backdrop-blur-2xl p-10 shadow-2xl transition-all hover:scale-105 hover:bg-white/60 translate-x-0 md:translate-x-12">
+                  <Landmark className="w-10 h-10 text-[#72563f] mb-6" />
+                  <h3 className="text-2xl font-bold text-[#2a3038] mb-4">TITLE TITLE</h3>
+                  <p className="text-[#2a3038]/70 leading-relaxed">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.</p>
+                </div>
+              </div>
+            </FadeUp>
           </div>
         </div>
       </section>
 
-      <section id="asset-management" className="scroll-mt-36 border-t border-[#38404b]/5 py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid items-start gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#72563f]">Gestión de activos</p>
-              <h2 className="mt-3 text-3xl font-bold leading-[1.1] tracking-tight sm:text-5xl">Asset Management</h2>
-              <p className="mt-5 text-base leading-relaxed text-[#38404b]/70 sm:text-lg">
-                Construcción y gestión de portafolios para inversionistas institucionales y calificados. El mandato define el universo; el proceso define cada decisión.
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-[#38404b]/60">
-                Pensado para family offices, instituciones, asesores y inversionistas que requieren un marco profesional de asignación, acceso y seguimiento — no una lista de productos.
-              </p>
-            </div>
-            <ul className="grid gap-5 sm:grid-cols-2 lg:col-span-7">
-              <li className="rounded-2xl border border-[#38404b]/10 bg-white p-6">
-                <h3 className="text-base font-semibold tracking-tight text-[#38404b]">Construcción de portafolio</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#38404b]/70">Diseñamos asignaciones alineadas a objetivos, horizonte y restricciones de cada mandato institucional o calificado.</p>
-              </li>
-              <li className="rounded-2xl border border-[#38404b]/10 bg-white p-6">
-                <h3 className="text-base font-semibold tracking-tight text-[#38404b]">Acceso a mercados globales</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#38404b]/70">Identificamos y estructuramos vehículos para que el inversionista latinoamericano participe en oportunidades fuera de su mercado local.</p>
-              </li>
-              <li className="rounded-2xl border border-[#38404b]/10 bg-white p-6">
-                <h3 className="text-base font-semibold tracking-tight text-[#38404b]">Supervisión continua</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#38404b]/70">Seguimos exposiciones, liquidez y contrapartes. El portafolio se revisa con disciplina, no solo cuando el mercado se mueve.</p>
-              </li>
-              <li className="rounded-2xl border border-[#38404b]/10 bg-white p-6">
-                <h3 className="text-base font-semibold tracking-tight text-[#38404b]">Informe y gobernanza</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#38404b]/70">Reportes periódicos y un marco de decisión claro, para que el comité o el inversionista sepa qué se hizo y por qué.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="wealth-services" className="scroll-mt-36 border-t border-[#38404b]/5 bg-white py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid items-start gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#72563f]">Servicios patrimoniales</p>
-              <h2 className="mt-3 text-3xl font-bold leading-[1.1] tracking-tight sm:text-5xl">Wealth Services</h2>
-              <p className="mt-5 text-base leading-relaxed text-[#38404b]/70 sm:text-lg">
-                Planificación y asesoría patrimonial para individuos y familias de alto patrimonio. El portafolio es una herramienta; el patrimonio es el conjunto.
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-[#38404b]/60">
-                Acompañamos decisiones de inversión en un marco más amplio: liquidez, horizonte, familia y coordinación con los asesores que el cliente ya eligió.
-              </p>
-            </div>
-            <ul className="grid gap-5 sm:grid-cols-2 lg:col-span-7">
-              <li className="rounded-2xl border border-[#38404b]/10 bg-[#f8f9fa]/70 p-6">
-                <h3 className="text-base font-semibold tracking-tight text-[#38404b]">Planificación patrimonial</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#38404b]/70">Ordenamos objetivos de largo plazo —crecimiento, liquidez, sucesión y uso del capital— antes de hablar de productos.</p>
-              </li>
-              <li className="rounded-2xl border border-[#38404b]/10 bg-[#f8f9fa]/70 p-6">
-                <h3 className="text-base font-semibold tracking-tight text-[#38404b]">Asesoría de inversión</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#38404b]/70">Acompañamos a individuos y familias de alto patrimonio en la lectura de oportunidades globales y en la coherencia del conjunto.</p>
-              </li>
-              <li className="rounded-2xl border border-[#38404b]/10 bg-[#f8f9fa]/70 p-6">
-                <h3 className="text-base font-semibold tracking-tight text-[#38404b]">Coordinación de asesores</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#38404b]/70">Trabajamos junto a los asesores legales, fiscales y fiduciarios que el cliente ya tiene. No sustituimos su consejo independiente.</p>
-              </li>
-              <li className="rounded-2xl border border-[#38404b]/10 bg-[#f8f9fa]/70 p-6">
-                <h3 className="text-base font-semibold tracking-tight text-[#38404b]">Estructura familiar</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#38404b]/70">Ayudamos a articular políticas de inversión y de gobierno familiar para que las decisiones sobrevivan a un ciclo o a una generación.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-
-      <section className="relative overflow-hidden">
-        <Image
-          src="/imported/781c04589548-luxury_architecture_1786981640000.webp"
-          alt=""
-          fill
-          className="absolute inset-0 h-full w-full object-cover object-[62%_center]"
-        />
-        <div className="absolute inset-0 bg-[#f8f9fa]/70"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9fa] via-[#f8f9fa]/80 to-[#f8f9fa]/40"></div>
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-32">
-          <h2 className="max-w-2xl text-3xl font-bold leading-[1.1] tracking-tight sm:text-5xl">Conversemos sobre su mandato.</h2>
-          <p className="mt-5 max-w-lg text-base leading-relaxed text-[#38404b]/80 sm:text-lg">
-            Si representa a un inversionista, una familia o una red de asesores, el siguiente paso es una conversación — no un formulario de productos.
-          </p>
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#72563f] text-[#030712] hover:bg-[#8c6b4e] w-full sm:w-auto"
-            >
-              Quiero ser Cliente
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#38404b] text-white hover:bg-[#38404b]/90 w-full sm:w-auto"
-            >
-              Quiero ser Asesor
-            </Link>
+      {/* Global Connectivity Module */}
+      <section className="relative overflow-hidden py-32 flex items-center min-h-[60vh]">
+        <Image src="/handshake-bg.png" alt="Global Services" fill className="absolute inset-0 object-cover object-center" />
+        <div className="absolute inset-0 bg-[#2a3038]/80 backdrop-blur-md"></div>
+        <div className="mx-auto max-w-7xl px-6 relative z-10 w-full">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <FadeUp>
+              <div className="rounded-[3rem] bg-white/10 backdrop-blur-3xl border border-white/20 p-12 shadow-2xl">
+                <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#eab308] mb-4">XXXX XXXXXX</p>
+                <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-6">TITLE TITLE TITLE</h2>
+                <p className="text-lg leading-relaxed text-white/80 mb-8">
+                  TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-3 rounded-full bg-[#eab308] px-10 py-5 text-sm font-bold text-[#2a3038] transition-all hover:scale-105 shadow-xl"
+                >
+                  XXXXX XXXXX
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </FadeUp>
           </div>
         </div>
       </section>

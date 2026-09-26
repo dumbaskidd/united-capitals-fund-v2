@@ -1,148 +1,156 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import FadeUp from "@/components/FadeUp";
+import { StaggerContainer, StaggerItem } from "@/components/StaggerUp";
+import { ArrowRight, Globe, Shield, TrendingUp } from "lucide-react";
+import Marquee from "@/components/Marquee";
 
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-[calc(100svh-7.5rem)] overflow-hidden">
-        <Image
-          src="/imported/781c04589548-luxury_architecture_1786981640000.webp"
-          alt=""
-          fill
-          priority
-          className="absolute inset-0 h-full w-full object-cover object-[62%_center]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9fa] via-[#f8f9fa]/75 to-[#f8f9fa]/25"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#f8f9fa]/80 via-transparent to-[#f8f9fa]/30"></div>
-        <div className="relative mx-auto flex min-h-[calc(100svh-7.5rem)] max-w-7xl items-center px-6 py-20">
-          <div className="max-w-3xl">
-            <h1 className="text-[2.65rem] font-bold leading-[1.08] tracking-tight sm:text-6xl lg:text-[4.25rem]">
-              Equipo especializado
-              <br />
-              en Inversiones Globales
+      {/* Hero Section */}
+      <section className="relative flex min-h-[95vh] items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/andes-bg.png"
+            alt="Andes Mountains"
+            fill
+            priority
+            className="absolute inset-0 object-cover object-center"
+          />
+          {/* Deep Dark Overlay */}
+          <div className="absolute inset-0 bg-[#2a3038]/60 backdrop-blur-[2px] z-0"></div>
+        </div>
+
+        <div className="relative z-10 w-full max-w-7xl px-6 py-20 text-center flex flex-col items-center">
+          <FadeUp delay={0.1} y={30}>
+            <h1 className="mt-8 max-w-5xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
+              TITLE TITLE<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#72563f] to-[#aa8362]">TEXT TEXT</span>
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-[#38404b]/70 sm:text-lg">
-              Experiencia internacional enfocada en identificar y estructurar oportunidades de inversión para Latinoamérica.
+          </FadeUp>
+
+          <FadeUp delay={0.2} y={30}>
+            <p className="mx-auto mt-8 max-w-2xl text-lg md:text-xl text-white/90 font-medium">
+              TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.
             </p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+          </FadeUp>
+
+          <FadeUp delay={0.3} y={30}>
+            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link
-                href="/philosophy"
-                className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#72563f] text-[#030712] hover:bg-[#8c6b4e] w-full sm:w-auto"
+                href="/services"
+                className="group flex items-center justify-center gap-2 rounded-full bg-white/20 backdrop-blur-3xl border border-white/30 px-10 py-5 text-sm font-bold text-white transition-all hover:bg-white/30 hover:scale-105 shadow-lg"
               >
-                Conoce sobre nosotros
+                XXXXX XXXXX
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#38404b] text-white hover:bg-[#38404b]/90 w-full sm:w-auto"
+                className="flex items-center justify-center rounded-full bg-[#72563f]/90 backdrop-blur-3xl border border-[#72563f]/50 px-10 py-5 text-sm font-bold text-white transition-all hover:bg-[#8c6b4e] hover:scale-105 shadow-lg"
               >
-                Contáctanos
+                XXXXX XXXXX
               </Link>
             </div>
-          </div>
+          </FadeUp>
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#f8f9fa] py-20 lg:py-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
-          <div>
-            <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-              Oportunidades
-              <br />
-              Globales de
-              <br />
-              Inversión
-            </h2>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-[#38404b]/70 sm:text-lg">
-              Nos especializamos en ser el socio estratégico de inversionistas y asesores financieros latinoamericanos.
-            </p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#72563f] text-[#030712] hover:bg-[#8c6b4e] w-full sm:w-auto"
-              >
-                Quiero ser Cliente
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#38404b] text-white hover:bg-[#38404b]/90 w-full sm:w-auto"
-              >
-                Quiero ser Asesor
-              </Link>
-            </div>
-          </div>
-          <div className="flex items-center justify-center py-8 lg:py-0">
-            <svg viewBox="0 0 420 420" className="h-auto w-full max-w-[420px] aspect-square" aria-hidden="true">
-              <defs>
-                <radialGradient id="uc-ring-glow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#eab308" stopOpacity="0.18"></stop>
-                  <stop offset="55%" stopColor="#eab308" stopOpacity="0.04"></stop>
-                  <stop offset="100%" stopColor="#eab308" stopOpacity="0"></stop>
-                </radialGradient>
-              </defs>
-              <circle cx="210" cy="210" r="200" fill="url(#uc-ring-glow)"></circle>
-              <circle cx="210" cy="210" r="188" fill="none" stroke="#eab308" strokeOpacity="0.45" strokeWidth="1.15"></circle>
-              <circle cx="210" cy="210" r="148" fill="none" stroke="#eab308" strokeOpacity="0.32" strokeWidth="1"></circle>
-              <circle cx="210" cy="210" r="108" fill="none" stroke="#ca8a04" strokeOpacity="0.28" strokeWidth="0.9"></circle>
-            </svg>
-          </div>
-        </div>
-      </section>
+      {/* Features Section - Apple Style Liquid Glass */}
+      <section className="relative bg-[#f8f9fa] py-24 lg:py-32 overflow-hidden">
+        {/* Subtle abstract shapes for liquid feel */}
+        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-[#72563f]/5 blur-3xl"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] rounded-full bg-[#38404b]/5 blur-3xl"></div>
 
-      <section className="overflow-hidden bg-white py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:text-left">
-            <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl text-transparent">
-              EMPTY TEXT
-            </h2>
-            <Link
-              href="/services"
-              className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#38404b] text-white hover:bg-[#38404b]/90 shrink-0"
-            >
-              Conoce más
-            </Link>
-          </div>
-        </div>
-        <div className="relative mt-16">
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-white to-transparent md:w-32"></div>
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-white to-transparent md:w-32"></div>
-          <div className="overflow-hidden">
-            <div className="uc-marquee flex w-max items-center gap-16 pr-16 md:gap-24 md:pr-24">
-              {Array.from({ length: 3 }).map((_, i) => (
-                <div key={i} className="flex gap-16 md:gap-24">
-                  <span className="shrink-0 text-xl font-semibold tracking-[0.22em] text-[#38404b]/70 md:text-2xl">BLOOMBERG</span>
-                  <span className="shrink-0 text-xl font-semibold tracking-[0.22em] text-[#38404b]/70 md:text-2xl">ICAPITAL</span>
-                  <span className="shrink-0 text-xl font-semibold tracking-[0.22em] text-[#38404b]/70 md:text-2xl">SALESFORCE</span>
-                  <span className="shrink-0 text-xl font-semibold tracking-[0.22em] text-[#38404b]/70 md:text-2xl">XP INC.</span>
-                  <span className="shrink-0 text-xl font-semibold tracking-[0.22em] text-[#38404b]/70 md:text-2xl">VANGUARD</span>
+        <div className="mx-auto max-w-7xl px-6 relative z-10">
+          <FadeUp>
+            <div className="max-w-2xl">
+              <h2 className="text-4xl font-bold tracking-tight text-[#2a3038] sm:text-5xl">TITLE TITLE</h2>
+              <p className="mt-4 text-lg text-[#2a3038]/60">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.</p>
+            </div>
+          </FadeUp>
+
+          <StaggerContainer className="mt-16 grid gap-8 md:grid-cols-3">
+            {[Globe, Shield, TrendingUp].map((Icon, i) => (
+              <StaggerItem key={i}>
+                <div className="group relative h-full rounded-[2rem] bg-white/40 backdrop-blur-2xl border border-white/60 p-8 transition-all duration-500 hover:bg-white/60 hover:shadow-2xl hover:shadow-[#2a3038]/10 hover:-translate-y-2">
+                  <div className="relative z-10">
+                    <div className="mb-6 inline-flex rounded-2xl bg-[#2a3038] p-4 text-[#72563f] shadow-xl shadow-[#2a3038]/20 transition-transform duration-500 group-hover:scale-110">
+                      <Icon className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-bold text-[#2a3038]">TITLE TITLE</h3>
+                    <p className="mt-3 leading-relaxed text-[#2a3038]/70">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.</p>
+                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
         </div>
       </section>
 
-      <section className="relative min-h-[90vh] overflow-hidden md:min-h-screen">
+      {/* Alianzas Marquee Section */}
+      <section className="overflow-hidden bg-[#2a3038] py-24 text-white relative">
+        <div className="mx-auto max-w-7xl px-6 relative z-10">
+          <FadeUp>
+            <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:text-left">
+              <h2 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+                TEXT <span className="text-[#72563f]">TEXT</span>
+              </h2>
+            </div>
+          </FadeUp>
+        </div>
+        
+        <FadeUp delay={0.2} className="relative mt-20 pb-10 w-full overflow-hidden">
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-24 bg-gradient-to-r from-[#2a3038] to-transparent md:w-48"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-24 bg-gradient-to-l from-[#2a3038] to-transparent md:w-48"></div>
+          
+          {/* Framer Motion Seamless Marquee */}
+          <Marquee>
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div key={i} className="flex items-center gap-20 md:gap-32 opacity-50 hover:opacity-100 transition-opacity duration-300">
+                <span className="shrink-0 text-2xl font-bold tracking-[0.2em] md:text-3xl text-white">BLOOMBERG</span>
+                <span className="shrink-0 text-2xl font-bold tracking-[0.2em] md:text-3xl text-white">ICAPITAL</span>
+                <span className="shrink-0 text-2xl font-bold tracking-[0.2em] md:text-3xl text-white">SALESFORCE</span>
+                <span className="shrink-0 text-2xl font-bold tracking-[0.2em] md:text-3xl text-white">XP INC.</span>
+                <span className="shrink-0 text-2xl font-bold tracking-[0.2em] md:text-3xl text-white">VANGUARD</span>
+              </div>
+            ))}
+          </Marquee>
+        </FadeUp>
+      </section>
+
+      {/* Global Reach - Deep Liquid Glass */}
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-24">
         <Image
-          src="/imported/5d82eafd584e-luxury_watch_macro_1786981627850.webp"
-          alt=""
+          src="/handshake-bg.png"
+          alt="Corporate Deal"
           fill
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          className="absolute inset-0 object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[#f8f9fa]/25"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#f8f9fa]/70 via-transparent to-[#f8f9fa]/20"></div>
-        <div className="relative mx-auto flex min-h-[90vh] max-w-7xl items-end px-6 py-16 md:min-h-screen md:py-20">
-          <div className="w-full max-w-lg rounded-2xl border border-[#38404b]/10 bg-white/80 p-8 shadow-2xl backdrop-blur-md sm:p-10">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Alcance Global</h2>
-            <p className="mt-4 text-base leading-relaxed text-[#38404b]/80">
-              Conectando portafolios a través de las fronteras financieras más dinámicas del mundo.
-            </p>
-            <Link
-              href="/services"
-              className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold transition-colors bg-[#72563f] text-[#030712] hover:bg-[#8c6b4e] mt-8"
-            >
-              Explorar Mercados
-            </Link>
-          </div>
+        {/* Deep opaque overlay without gradients */}
+        <div className="absolute inset-0 bg-[#1c2126]/80 backdrop-blur-[6px]"></div>
+        
+        <div className="relative mx-auto w-full max-w-7xl px-6">
+          <FadeUp>
+            <div className="mx-auto max-w-2xl overflow-hidden rounded-[2.5rem] border border-white/20 bg-white/10 p-12 shadow-[0_30px_60px_rgba(0,0,0,0.5)] backdrop-blur-3xl text-center">
+              <span className="inline-block rounded-full bg-[#72563f]/30 px-4 py-1.5 text-xs font-bold text-[#eab308] uppercase tracking-wider mb-6 border border-[#72563f]/50">
+                XXXX XXXXXX
+              </span>
+              <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl mb-8">
+                TITLE TITLE
+              </h2>
+              <p className="text-lg leading-relaxed text-white/80 mb-10">
+                TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.
+              </p>
+              <Link
+                href="/services"
+                className="inline-flex items-center justify-center gap-3 rounded-full bg-[#72563f]/90 px-10 py-5 text-sm font-bold text-white transition-all hover:scale-105 shadow-xl"
+              >
+                XXXXX XXXXX
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
+          </FadeUp>
         </div>
       </section>
     </>

@@ -1,89 +1,56 @@
-import Link from "next/link";
+import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
+import FadeUp from "@/components/FadeUp";
+import { StaggerContainer, StaggerItem } from "@/components/StaggerUp";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contacto — Andes Capital",
-  description: "Habla con el equipo de Andes Capital sobre tu perfil de inversión, asesoría patrimonial o una alianza estratégica.",
+  description: "TEXT TEXT TEXT",
 };
 
 export default function Contact() {
   return (
     <>
-      <section className="relative overflow-hidden border-b border-[#38404b]/5">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-40"
-          style={{
-            background: "radial-gradient(ellipse 70% 60% at 80% -10%, rgba(56,189,248,0.12), transparent 60%), radial-gradient(ellipse 50% 40% at 10% 110%, rgba(234,179,8,0.08), transparent 55%)"
-          }}
-        ></div>
-        <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#72563f]">Contacto</p>
-          <h1 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight md:text-5xl">
-            Nuestro equipo está listo para conversar sobre tu perfil de inversión
-          </h1>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#38404b]/70 md:text-lg">
-            Escríbenos para explorar asesoría patrimonial, acceso a oportunidades globales o una alianza como asesor. Respondemos de forma directa y confidencial.
-          </p>
-        </div>
-      </section>
+      <section className="relative overflow-hidden pt-40 pb-32 flex items-center min-h-[100vh]">
+        <Image src="/contact-bg.png" alt="Contact" fill className="absolute inset-0 object-cover object-center" />
+        <div className="absolute inset-0 bg-[#1c2126]/80 backdrop-blur-md"></div>
+        
+        <div className="mx-auto max-w-7xl px-6 relative z-10 w-full">
+          <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
+            <FadeUp>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#eab308]">XXXXX XXXXX</p>
+                <h1 className="mt-4 text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-6xl">
+                  TITLE TITLE<br />TITLE TITLE
+                </h1>
+                <p className="mt-6 text-lg leading-relaxed text-white/80">
+                  TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.
+                </p>
+                
+                <div className="mt-12 space-y-6">
+                  <div className="rounded-3xl bg-white/10 backdrop-blur-2xl border border-white/20 p-8">
+                    <h3 className="font-bold text-white text-lg">XXXXX</h3>
+                    <p className="mt-2 text-white/70">Alejo Bezada 131, Lima, 15088, Perú</p>
+                  </div>
+                  <div className="rounded-3xl bg-white/10 backdrop-blur-2xl border border-white/20 p-8">
+                    <h3 className="font-bold text-white text-lg">XXXXX(X)</h3>
+                    <p className="mt-2 text-white/70">
+                      +51 959 217 636<br />
+                      +51 995 042 876<br />
+                      +34 642 17 50 97
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </FadeUp>
 
-      <section className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 lg:py-24">
-        <aside className="space-y-8">
-          <div>
-            <h2 className="text-xl font-semibold tracking-tight text-[#38404b]">Datos de contacto</h2>
-            <p className="mt-2 text-sm leading-relaxed text-[#38404b]/70">
-              También puedes escribirnos o llamarnos directamente. El formulario te lleva a Gmail con el mensaje ya redactado, listo para revisar y enviar.
-            </p>
+            <FadeUp delay={0.2}>
+              <div className="rounded-[2.5rem] bg-white/10 backdrop-blur-3xl border border-white/20 p-8 sm:p-12 shadow-2xl">
+                <ContactForm />
+              </div>
+            </FadeUp>
           </div>
-          <dl className="space-y-5">
-            <div className="rounded-2xl border border-[#38404b]/10 bg-white/80 p-5">
-              <dt className="text-xs font-semibold uppercase tracking-widest text-[#72563f]">Dirección</dt>
-              <dd className="mt-2">
-                <a
-                  href="https://maps.google.com/?q=Alejo%20Bezada%20131%2C%20Lima%2C%2015088%2C%20Per%C3%BA"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-base text-[#38404b]/90 transition-colors hover:text-[#72563f]"
-                >
-                  Alejo Bezada 131, Lima, 15088, Perú
-                </a>
-              </dd>
-            </div>
-            <div className="rounded-2xl border border-[#38404b]/10 bg-white/80 p-5">
-              <dt className="text-xs font-semibold uppercase tracking-widest text-[#72563f]">Teléfono(s)</dt>
-              <dd className="mt-2 flex flex-col space-y-1">
-                <a href="tel:+51959217636" className="text-base text-[#38404b]/90 transition-colors hover:text-[#72563f]">
-                  +51 959 217 636
-                </a>
-                <a href="tel:+51995042876" className="text-base text-[#38404b]/90 transition-colors hover:text-[#72563f]">
-                  +51 995 042 876
-                </a>
-                <a href="tel:+34642175097" className="text-base text-[#38404b]/90 transition-colors hover:text-[#72563f]">
-                  +34 642 17 50 97
-                </a>
-              </dd>
-            </div>
-            <div className="rounded-2xl border border-[#38404b]/10 bg-white/80 p-5">
-              <dt className="text-xs font-semibold uppercase tracking-widest text-[#72563f]">Correo</dt>
-              <dd className="mt-2">
-                <a href="mailto:colladojeanfabio@gmail.com" className="break-all text-base text-[#38404b]/90 transition-colors hover:text-[#72563f]">
-                  colladojeanfabio@gmail.com
-                </a>
-              </dd>
-            </div>
-          </dl>
-          <p className="text-sm text-[#38404b]/60">
-            Consulta el <Link href="/legal" className="text-[#72563f] underline-offset-2 hover:text-[#8c6b4e] hover:underline">Aviso Legal</Link> y la <Link href="/privacy" className="text-[#72563f] underline-offset-2 hover:text-[#8c6b4e] hover:underline">Política de Privacidad</Link>.
-          </p>
-        </aside>
-
-        <div className="rounded-2xl border border-[#38404b]/10 bg-white/80 p-6 shadow-2xl sm:p-8 md:p-10">
-          <h2 className="text-xl font-semibold tracking-tight text-[#38404b]">Envíanos un mensaje</h2>
-          <p className="mt-2 mb-8 text-sm leading-relaxed text-[#38404b]/70">
-            Completa el formulario. Al enviar, se abrirá Gmail con tu mensaje ya redactado hacia colladojeanfabio@gmail.com, listo para que lo revises y presiones enviar.
-          </p>
-          <ContactForm />
         </div>
       </section>
     </>

@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f8f9fa] border-t border-[#38404b]/10 text-[#38404b]/70">
+    <footer className="bg-[#38404b] border-t border-[#f8f9fa]/10 text-[#f8f9fa]/70">
       <div className="max-w-7xl mx-auto px-6 py-16 grid gap-12 md:grid-cols-5">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2 mb-4">
-            <img src="/andes-logo.png" alt="Andes Capital" className="h-8 w-auto" />
+          <div className="flex items-center gap-2 mb-6">
+            <img src="/andes-logo-black.png" alt="Andes Capital" className="h-10 md:h-12 w-auto drop-shadow-md" />
           </div>
           <p className="text-sm max-w-xs">
             © {new Date().getFullYear()} Andes Capital. Conectando portafolios e inversionistas latinoamericanos con oportunidades globales.
@@ -31,12 +31,12 @@ export default function Footer() {
           <h3 className="text-xs font-semibold tracking-widest text-[#72563f] mb-4">METODOLOGÍA</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/philosophy#methodology" className="hover:text-[#38404b] transition-colors">
+              <Link href="/philosophy#methodology" className="hover:text-[#f8f9fa] transition-colors">
                 Metodología Estratégica
               </Link>
             </li>
             <li>
-              <Link href="/philosophy#sectors" className="hover:text-[#38404b] transition-colors">
+              <Link href="/philosophy#sectors" className="hover:text-[#f8f9fa] transition-colors">
                 Sectores del Portafolio
               </Link>
             </li>
@@ -46,12 +46,12 @@ export default function Footer() {
           <h3 className="text-xs font-semibold tracking-widest text-[#72563f] mb-4">ACCESO</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/services" className="hover:text-[#38404b] transition-colors">
+              <Link href="/services" className="hover:text-[#f8f9fa] transition-colors">
                 Acceso Institucional
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-[#38404b] transition-colors">
+              <Link href="/contact" className="hover:text-[#f8f9fa] transition-colors">
                 Portal de Clientes
               </Link>
             </li>
@@ -61,12 +61,12 @@ export default function Footer() {
           <h3 className="text-xs font-semibold tracking-widest text-[#72563f] mb-4">CUMPLIMIENTO</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/legal" className="hover:text-[#38404b] transition-colors">
+              <Link href="/legal" className="hover:text-[#f8f9fa] transition-colors">
                 Aviso Legal
               </Link>
             </li>
             <li>
-              <Link href="/privacy" className="hover:text-[#38404b] transition-colors">
+              <Link href="/privacy" className="hover:text-[#f8f9fa] transition-colors">
                 Política de Privacidad
               </Link>
             </li>
