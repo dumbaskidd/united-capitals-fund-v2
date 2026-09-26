@@ -12,7 +12,7 @@ export default function Home() {
       <section className="relative flex min-h-[95vh] items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/andes-bg.png"
+            src="/united-capitals-fund-v2/andes-bg.png"
             alt="Andes Mountains"
             fill
             priority
@@ -122,7 +122,7 @@ export default function Home() {
       {/* Global Reach - Deep Liquid Glass */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-24">
         <Image
-          src="/handshake-bg.png"
+          src="/united-capitals-fund-v2/handshake-bg.png"
           alt="Corporate Deal"
           fill
           className="absolute inset-0 object-cover object-center"

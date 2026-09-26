@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid gap-12 md:grid-cols-5">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 mb-6">
-            <Image src="/andes-logo-black.png" alt="Andes Capital" width={180} height={48} className="h-10 md:h-12 w-auto drop-shadow-md" />
+            <Image src="/united-capitals-fund-v2/andes-logo-black.png" alt="Andes Capital" width={180} height={48} className="h-10 md:h-12 w-auto drop-shadow-md" />
           </div>
           <p className="text-sm max-w-xs">
             © {new Date().getFullYear()} Andes Capital. Conectando portafolios e inversionistas latinoamericanos con oportunidades globales.

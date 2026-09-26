@@ -15,7 +15,7 @@ export default function Philosophy() {
   return (
     <>
       <section className="relative overflow-hidden pt-40 pb-32 flex items-center min-h-[70vh]">
-        <Image src="/philosophy-bg.png" alt="Philosophy" fill className="absolute inset-0 object-cover object-center" />
+        <Image src="/united-capitals-fund-v2/philosophy-bg.png" alt="Philosophy" fill className="absolute inset-0 object-cover object-center" />
         <div className="absolute inset-0 bg-[#2a3038]/70 backdrop-blur-[4px]"></div>
         <div className="mx-auto max-w-4xl px-6 relative z-10 text-center">
           <FadeUp>
@@ -57,7 +57,7 @@ export default function Philosophy() {
 
       {/* Vision Section with Counter */}
       <section className="relative overflow-hidden py-32 flex items-center min-h-[60vh]">
-        <Image src="/vision-bg.png" alt="Vision" fill className="absolute inset-0 object-cover object-center" />
+        <Image src="/united-capitals-fund-v2/vision-bg.png" alt="Vision" fill className="absolute inset-0 object-cover object-center" />
         <div className="absolute inset-0 bg-[#f8f9fa]/80 backdrop-blur-xl"></div>
         <div className="mx-auto max-w-7xl px-6 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -119,7 +119,7 @@ export default function Philosophy() {
 
       {/* Mission Section */}
       <section className="relative overflow-hidden py-32 flex items-center min-h-[60vh]">
-        <Image src="/mission-bg.png" alt="Mission" fill className="absolute inset-0 object-cover object-center" />
+        <Image src="/united-capitals-fund-v2/mission-bg.png" alt="Mission" fill className="absolute inset-0 object-cover object-center" />
         <div className="absolute inset-0 bg-[#2a3038]/80 backdrop-blur-xl"></div>
         <div className="mx-auto max-w-7xl px-6 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -138,7 +138,7 @@ export default function Philosophy() {
             </FadeUp>
             <FadeUp>
               <div className="relative h-[400px] rounded-[3rem] overflow-hidden border-2 border-white/10 shadow-2xl group">
-                 <Image src="/strategy-bg.png" alt="Mission Value" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                 <Image src="/united-capitals-fund-v2/strategy-bg.png" alt="Mission Value" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                  <div className="absolute inset-0 bg-[#2a3038]/20 mix-blend-color-burn transition-opacity duration-700 group-hover:opacity-0"></div>
                  <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-[3rem]"></div>
               </div>
