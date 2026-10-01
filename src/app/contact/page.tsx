@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <>
       <section className="relative overflow-hidden pt-40 pb-32 flex items-center min-h-[100vh]">
-        <Image src="/united-capitals-fund-v2/contact-bg.png" alt="Contact" fill className="absolute inset-0 object-cover object-center" />
+        <Image src="/contact-bg.png" alt="Contact" fill className="absolute inset-0 object-cover object-center" />
         <div className="absolute inset-0 bg-[#1c2126]/80 backdrop-blur-md"></div>
         
         <div className="mx-auto max-w-7xl px-6 relative z-10 w-full">

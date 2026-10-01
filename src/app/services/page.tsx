@@ -103,7 +103,7 @@ export default function Services() {
 
       {/* Global Connectivity Module */}
       <section className="relative overflow-hidden py-32 flex items-center min-h-[60vh]">
-        <Image src="/united-capitals-fund-v2/handshake-bg.png" alt="Global Services" fill className="absolute inset-0 object-cover object-center" />
+        <Image src="/handshake-bg.png" alt="Global Services" fill className="absolute inset-0 object-cover object-center" />
         <div className="absolute inset-0 bg-[#2a3038]/80 backdrop-blur-md"></div>
         <div className="mx-auto max-w-7xl px-6 relative z-10 w-full">
           <div className="grid md:grid-cols-2 gap-16 items-center">
