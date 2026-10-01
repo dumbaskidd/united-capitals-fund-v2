@@ -4,10 +4,12 @@ import FadeUp from "@/components/FadeUp";
 import { StaggerContainer, StaggerItem } from "@/components/StaggerUp";
 import { ArrowRight, Globe, Shield, TrendingUp } from "lucide-react";
 import Marquee from "@/components/Marquee";
+import WelcomeModal from "@/components/WelcomeModal";
 
 export default function Home() {
   return (
     <>
+      <WelcomeModal />
       {/* Hero Section */}
       <section className="relative flex min-h-[95vh] items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -25,14 +27,14 @@ export default function Home() {
         <div className="relative z-10 w-full max-w-7xl px-6 py-20 text-center flex flex-col items-center">
           <FadeUp delay={0.1} y={30}>
             <h1 className="mt-8 max-w-5xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
-              TITLE TITLE<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#72563f] to-[#aa8362]">TEXT TEXT</span>
+              Construimos tu<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#72563f] to-[#aa8362]">futuro financiero</span>
             </h1>
           </FadeUp>
 
           <FadeUp delay={0.2} y={30}>
             <p className="mx-auto mt-8 max-w-2xl text-lg md:text-xl text-white/90 font-medium">
-              TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.
+              Estrategias patrimoniales claras, visión global y acompañamiento experto para tomar decisiones que perduran.
             </p>
           </FadeUp>
 
@@ -42,14 +44,14 @@ export default function Home() {
                 href="/services"
                 className="group flex items-center justify-center gap-2 rounded-full bg-white/20 backdrop-blur-3xl border border-white/30 px-10 py-5 text-sm font-bold text-white transition-all hover:bg-white/30 hover:scale-105 shadow-lg"
               >
-                XXXXX XXXXX
+                Descubre nuestros servicios
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link
                 href="/contact"
                 className="flex items-center justify-center rounded-full bg-[#72563f]/90 backdrop-blur-3xl border border-[#72563f]/50 px-10 py-5 text-sm font-bold text-white transition-all hover:bg-[#8c6b4e] hover:scale-105 shadow-lg"
               >
-                XXXXX XXXXX
+                Contáctanos
               </Link>
             </div>
           </FadeUp>
@@ -65,8 +67,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 relative z-10">
           <FadeUp>
             <div className="max-w-2xl">
-              <h2 className="text-4xl font-bold tracking-tight text-[#2a3038] sm:text-5xl">TITLE TITLE</h2>
-              <p className="mt-4 text-lg text-[#2a3038]/60">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.</p>
+              <h2 className="text-4xl font-bold tracking-tight text-[#2a3038] sm:text-5xl">Una estrategia hecha para ti</h2>
+              <p className="mt-4 text-lg text-[#2a3038]/60">Conectamos experiencia, análisis y oportunidades para proteger y hacer crecer tu patrimonio.</p>
             </div>
           </FadeUp>
 
@@ -78,8 +80,8 @@ export default function Home() {
                     <div className="mb-6 inline-flex rounded-2xl bg-[#2a3038] p-4 text-[#72563f] shadow-xl shadow-[#2a3038]/20 transition-transform duration-500 group-hover:scale-110">
                       <Icon className="w-8 h-8" />
                     </div>
-                    <h3 className="text-xl font-bold text-[#2a3038]">TITLE TITLE</h3>
-                    <p className="mt-3 leading-relaxed text-[#2a3038]/70">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.</p>
+                    <h3 className="text-xl font-bold text-[#2a3038]">Visión global</h3>
+                    <p className="mt-3 leading-relaxed text-[#2a3038]/70">Accedemos a oportunidades y perspectivas de los principales mercados internacionales.</p>
                   </div>
                 </div>
               </StaggerItem>
@@ -94,7 +96,7 @@ export default function Home() {
           <FadeUp>
             <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:text-left">
               <h2 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-                TEXT <span className="text-[#72563f]">TEXT</span>
+                Nuestros <span className="text-[#72563f]">aliados</span>
               </h2>
             </div>
           </FadeUp>
@@ -134,19 +136,19 @@ export default function Home() {
           <FadeUp>
             <div className="mx-auto max-w-2xl overflow-hidden rounded-[2.5rem] border border-white/20 bg-white/10 p-12 shadow-[0_30px_60px_rgba(0,0,0,0.5)] backdrop-blur-3xl text-center">
               <span className="inline-block rounded-full bg-[#72563f]/30 px-4 py-1.5 text-xs font-bold text-[#eab308] uppercase tracking-wider mb-6 border border-[#72563f]/50">
-                XXXX XXXXXX
+                Alcance global
               </span>
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl mb-8">
-                TITLE TITLE
+                Tu patrimonio, nuestra prioridad
               </h2>
               <p className="text-lg leading-relaxed text-white/80 mb-10">
-                TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT.
+                Te acompañamos con disciplina, transparencia y una visión de largo plazo para transformar tus objetivos en decisiones financieras sólidas.
               </p>
               <Link
                 href="/services"
                 className="inline-flex items-center justify-center gap-3 rounded-full bg-[#72563f]/90 px-10 py-5 text-sm font-bold text-white transition-all hover:scale-105 shadow-xl"
               >
-                XXXXX XXXXX
+                Descubre nuestros servicios
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
