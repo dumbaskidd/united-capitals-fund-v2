@@ -9,7 +9,6 @@ import WelcomeModal from "@/components/WelcomeModal";
 export default function Home() {
   return (
     <>
-      <WelcomeModal />
       {/* Hero Section */}
       <section className="relative flex min-h-[95vh] items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -25,6 +24,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 w-full max-w-7xl px-6 py-20 text-center flex flex-col items-center">
+          <WelcomeModal />
           <FadeUp delay={0.1} y={30}>
             <h1 className="mt-8 max-w-5xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
               Construimos tu<br />
