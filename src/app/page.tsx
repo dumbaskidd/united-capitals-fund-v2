@@ -4,6 +4,7 @@ import FadeUp from "@/components/FadeUp";
 import { StaggerContainer, StaggerItem } from "@/components/StaggerUp";
 import { ArrowRight, Globe, Shield, TrendingUp } from "lucide-react";
 import Marquee from "@/components/Marquee";
+import WelcomeBanner from "@/components/WelcomeBanner";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 w-full max-w-7xl px-6 py-20 text-center flex flex-col items-center">
+          <WelcomeBanner />
+
           <FadeUp delay={0.1} y={30}>
             <h1 className="mt-8 max-w-5xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
               Construimos tu<br />
